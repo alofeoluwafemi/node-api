@@ -11,7 +11,7 @@ var httpServer = http.createServer(function(req, res){
     unifiedServer(req, res);
 });
 
-httpServer.listen(config.httpPort,function(){
+httpServer.listen(process.env.PORT,function(){
     console.log('Server is listening to port '+ config.httpPort);
 });
 
