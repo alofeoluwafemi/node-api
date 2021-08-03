@@ -97,7 +97,7 @@ handlers.transaction = function(data, callback){
                     if(err){
                         callback(200, {status: true, message: err});
                     }else{
-                        callback(200, {status: true});
+                        callback(200, payload);
                     }
                 });
             }
