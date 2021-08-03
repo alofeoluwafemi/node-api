@@ -67,7 +67,7 @@ var unifiedServer = function(req, res){
         res.writeHead(statusCode);
         res.end(payloadString);
 
-        //console.log(trimedPath ,statusCode, payload);
+        console.log(trimedPath ,statusCode, payload);
         });
     });
 };
