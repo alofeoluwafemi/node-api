@@ -82,6 +82,7 @@ handlers.ping = function(data, callback){
 handlers.transaction = function(data, callback){
     var payload = data.payload;
 
+    console.log(payload);
     if(payload.status === 'confirmed' && 
     payload.direction === 'incoming'  && 
     payload.system === 'ethereum'     && 
