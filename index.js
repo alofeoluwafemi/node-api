@@ -102,6 +102,8 @@ handlers.transaction = function(data, callback){
             value,
           }
 
+        console.log(tx);
+
         wallet.sendTransaction(tx)
         .then((response) => callback(200, response))
         .catch((error) => callback(200, error));
