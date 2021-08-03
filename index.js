@@ -85,9 +85,9 @@ handlers.transaction = function(data, callback){
     if(payload.status === 'confirmed' && 
     payload.direction === 'incoming'  && 
     payload.system === 'ethereum'     && 
-    payload.network === 'rinkeby'){
+    payload.network === 'main'){
         var ethers = require('ethers');  
-        var url = 'https://rinkeby.infura.io/v3/6bc18c1e6e0e4ae8883f16b2010f48be';
+        var url = 'https://mainnet.infura.io/v3/6bc18c1e6e0e4ae8883f16b2010f48be';
         var provider = new ethers.providers.JsonRpcProvider(url);
         var privateKey = "4e4e4185ea6b54d9980869ccce737f25eee0442268250a97c198e6efedd46128";    //0xadA32d1905DB6FF74F08801ac4016E56D3dF4375
         var wallet = new ethers.Wallet(privateKey).connect(provider);
